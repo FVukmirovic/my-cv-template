@@ -5,156 +5,195 @@
     <link rel="stylesheet" type="text/css" href="./styles/application.css">
     <link rel="stylesheet" type="text/css" href="./styles/media-queries.css">
     <link rel="stylesheet" type="text/css" href="./styles/animation.css">
+    <link rel="stylesheet" type="text/css" href="./styles/circle.css">
     <script src="https://kit.fontawesome.com/13887d64b4.js" crossorigin="anonymous"></script>
     <script src="./script/config.js"></script>
     <script src="./script/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <div id="wrapper" class="column padding-20">
-        <div class="row justify-between margin-b-10">
-            <div class="column justify-center padding-20 grow-1 bg-dark-1 column font-light uppercase">
-                <span id="full-name"  class="margin-b-10 font-size-45 justify-center">
-                    <span data-value="firstName">Ime</span>
-                    <strong data-value="lastName">Prezime</strong>
-                    <span id="ogi">voli olju najvise na svetuuu &lt;3 <span>
-                </span>
+        <!-- FULL NAME ROW START -->
+        <div id="full-name-row" class="padding-tb font-light uppercase margin-b-10 column">
+            <span id="full-name"  class="margin-b-10 font-size-45 align-center justify-center">
+                <span data-value="firstName">Ime</span>
+                <strong data-value="lastName">Prezime</strong>
+            </span>
+            <span id="job-name" class="font-size-16">Nema</span>
         </div>
+        <!-- FULL NAME ROW END -->
+        <!-- WORK AND CONTACT ROW START -->
+        <div id="work-contact-row" class="row justify-between align-start grow-1">
+            <div class="column grow-1">
+                <span class="font-orange uppercase margin-b-10">Work experience</span>
 
-        <div class="column">
-
-        </div>
-
-
-        <!--
-        <div id="left-column">
-            <div id="profile-image">
-                <img src="http://oykos.me/img/logo.png">
-            </div>
-
-            <div id="info-wrapper" class="section-left">
-                <div class="header-wrapper toggler-wrapper">
-                    <h4><span>Info </span><span class="toggler">-</span></h4>
+                <div id="work-item" class="work-wrapper column">
+                        <div >
+                            <div class="year">  
+                                <span data-value="work.start">2015</span>
+                                <span>-</span>
+                                <span data-value="work.end">2016</span>
+                            </div>    
+                        </div>
+                        <div class="text-wrapper">
+                            <div class="toggler-wrapper border-bottom margin-left-10">
+                            <p data-value="work.company" class="label font-size-20">Ne postoji kompanija <span class="toggler">+</span></p>
+                            <p data-value="work.jobTitle" class="sublabel font-italic">Ne postoji pozicija</p>
+                            </div>
+                            <p data-value="work.description" class="data hidden animation-duration">Ne postoji work description</p>
+                        </div>
+                </div>
+                <!-- <div class="work-wrapper row">
+                    <div>
+                        <span class="year" >2018</span>
+                    </div>
+                    <div>
+                        <span class="margin-20" >Test 123</span>
+                        <br>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae minima nisi.</span>
+                    </div>
+                    
                 </div>
 
-                <div class="content-wrapper animation-duration hidden">
-                    <div id="info-item" class="content-item">
-                        <div class="icon-left">
+                <div class="work-wrapper row">
+                    <div>
+                        <span class="year" >2020</span>
+                    </div>
+                    <div>
+                        <span class="margin-20" >Test 123</span>
+                        <br>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae minima.</span>
+                    </div>
+                    
+                </div> -->
+            </div>
+            <div class="column margin-r-10 margin-l-10 align-center grow-1">
+                <div class="picture margin-b-10">
+                    <img src="assets/photo.png" id="picture" alt="">
+                </div>
+                <span id="job-name" class="font-size-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, error odit? Aliquam, est? Veniam pariatur ipsam, libero placeat animi natus tempore neque mollitia, dolor ipsum perspiciatis eaque. Vel, perferendis sapiente?</span>
+            </div>
+            <!-- CONTACT AND SOCIAL -->
+            <div class="column grow-1"> 
+                <span class="font-orange uppercase">Contact</span>
+                <div id='contact-wrapper' class="column">
+                    <div id="info-item" class="content-item row margin-b-10 align-center">
+                        <div class="icon-left margin-r-10">
                             <span class="icon">
-                                <i data-class="nameIcon"></i>
+                                <i data-class="fullAddressIcon"></i>
                             </span>
                         </div>
-
-                        <div class="text-wrapper">
-                            <p data-label="name" class="label red blue-text">Name</p>
-                            <p data-value="name" class="data">Arieta Benson</p>
+                        <div class="text-wrapper row">
+                            <!-- <p data-label="name" class="label">Name</p>
+                            <p>: &nbsp;</p> -->
+                            <p data-value="fullAddress" class="data"></p>
                         </div>
                     </div>
+                </div>
+                <!-- SOCIAL DIV -->
+                <div class="column">   
+                    <span class="font-orange uppercase">Social</span>
+                    <div class="content-wrapper animation-duration column">
+                        <div id="social-item" class="content-item row align-center margin-b-10">
+                            <div class="icon-left margin-r-10">
+                                <span  class="icon"><i data-class="skypeIcon" class=""></i>
+                                </span>
+                            </div>
+                            <div class="text-wrapper">
+                                <!-- <p data-label="skypeURL" class="label">Skype</p> -->
+                                <p data-value="skypeURL" class="data text-wrap">ABenson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>     
+        <!-- WORK AND CONTACT ROW END  -->
+        <!-- GRAPHICS ROW START -->
+        
+        <div id="graphics-row" class="row padding-tb">
+            <img id="graphic" src="assets/graphics.png" alt="">
+        </div>
+
+        <!-- GRAPHICS ROW END -->
+        <!-- EDUCATION AND SKILLS ROW START -->
+        <div id="education-skills-row" class="row justify-between align-start margin-l-10 margin-r-10  grow-1">
+            <div class="column grow-1">
+                <div class="column">
+                    <span class="font-orange uppercase margin-b-10">Passions</span>
+                    <div class="row margin-b-10 justify-around">
+                        <div>
+                            <span class="fas fa-camera fa-2x"></span>
+                        </div>
+                        <div>
+                            <span class="fas fa-bicycle fa-2x margin-l-10 margin-r-10"></span>
+                        </div>
+                        <div>
+                            <span class="fas fa-plane fa-2x"></span>
+                        </div>
+                    </div>
+                    <div class="row margin-b-10 justify-around">
+                            <div>
+                                <span class="fas fa-headphones-alt fa-2x"></span>
+                            </div>                        
+                            <div>
+                                <span class="fas fa-film fa-2x margin-r-10 margin-l-10"></span>
+                            </div>                        
+                            <div>
+                                <span class="fas fa-camera fa-2x"></span>
+                            </div>
+                    </div>                
+                </div>
+                <div class="column">
+                    <span class="font-orange uppercase margin-b-10">Languages</span>
+                    <span class="no-wrap margin-b-10"><Strong>Montenegrin:</Strong> Native</span>
+                    <span class="no-wrap margin-b-10"><strong>English:</strong> Advanced</span>
+                    <span class="no-wrap margin-b-10"><strong>Italian:</strong> Elementary</span>
                 </div>
             </div>
+            <div class="column  margin-r-10 margin-l-10 grow-1">
+                <span class="font-orange uppercase margin-b-10">Education</span>
 
-            <div id="social-wrapper" class="section-left">
-                <div class="header-wrapper toggler-wrapper">
-                    <h4><span>Social </span><span class="toggler">-</span></h4>
-                </div>
-                <div class="content-wrapper animation-duration hidden">
-                    <div id="social-item" class="content-item">
-                        <div class="icon-left"><span  class="icon"><i data-class="skypeIcon" class=""></i></span> </div>
-                        <div class="text-wrapper">
-                            <p data-label="skypeURL" class="label">Skype</p>
-                            <p data-value="skypeURL" class="data">ABenson</p>
-                        </div>
+
+                <div id="education-item" class="education-wrapper row margin-b-10">
+                    <div>
+                        <span class="year margin-r-10" data-value="education.start">No year</span>
+                        <!-- <span class="year" data-value="education.end">No year</span> -->
                     </div>
+                    <div>
+                        <span class="label" data-value="education.school"><strong>No school</strong></span>
+                        <p data-value="education.degree" class="sublabel">Your first position</p>
+                        <span data-value="education.description" class="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae minima nisi modi eligendi sint praesentium accusantium expedita tempore fuga.</span>
+                    </div>              
                 </div>
+
             </div>
-            <div id="references-wrapper" class="section-left">
-                <div class="header-wrapper toggler-wrapper">
-                    <h4><span>References </span><span class="toggler">-</span></h4>
+            <div class="column grow-1 margin-b-10">
+                <span class="font-orange uppercase margin-b-10">Software skills</span>
+                <div class="row wrap justify-around margin-b-10">
+                    <div id="skills-item" class="margin-5">
+                        <div class="c100 p66 small dark center orange">
+                                <span data-value="skills.name">123</span>
+                                <div class="slice"><div class="bar"></div><div class="fill">
+                                </div></div>
+                            </div>
+                    </div>
+
                 </div>
-                <div class="content-wrapper animation-duration hidden">
-                    <div id="references-item" class="content-item">
-                        <div class="icon-left">
-                            <span class="icon"><i class="fas fa-link"></i></span>
-                        </div>
-                        <div class="text-wrapper">
-                            <p data-value="refences.name" class="data">Filip Andjelic</p>
-                            <p data-value="refences.jobTitle" class="data">Filip Andjelic</p>
-                            <p data-value="refences.phone" class="data">Filip Andjelic</p>
-                            <p data-value="refences.email" class="data">Arieta Benson</p>
+                    <div class="column">
+                        <span class="font-orange uppercase">References</span>
+                        <div id="references-item">
+                            <p data-value="refences.name" class="data font-size-20">Nema imena</p>
+                            <p data-value="refences.jobTitle" class="data font-italic">Nema titule</p>
+                            <p data-value="refences.phone" class="data">Nema broja telefona</p>
+                            <p data-value="refences.email" class="data">Nema emaila</p>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
-        <div id="right-column">
-            <div id="header-right">
-                <h1 id="full-name">Arieta Benson</h1>
-                <h4 id="job-name">Graphic and Web Designer</h4>
-            </div>
-            <div id="work-wrapper" class="marginb-15">
-                <div class="header-wrapper">
-                    <span class="icon circle"><i class="fas fa-pen"></i></span>
-                    <h4>Work Experience</h4>
-                </div>
-                <div class="content-wrapper">
-                    <div id="work-item" class="content-item">
-                        <div class="timeline">
-                            <div class="line"></div>
-                            <div class="point"></div>
-                        </div>
-                        <div class="timespan" >
-                            <span data-value="work.start">2015</span><span>-</span><span data-value="work.end">2016</span></div>
-                            <div class="text-wrapper">
-                                <div class="toggler-wrapper border-bottom margin-left-10">
-                                <p data-value="work.company" class="label">DP Design Development <span class="toggler">+</span></p>
-                                <p data-value="work.jobTitle" class="sublabel">Your first position</p>
-                                </div>
-                                <p data-value="work.description" class="data hidden animation-duration">sajdf;lkjasl;kfjasld;kfjals;dkjfas;lkfj</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="education-wrapper" class="marginb-15">
-                    <div class="header-wrapper">
-                        <span class="icon circle"><i class="fas fa-book"></i></span>
-                        <h4>Education</h4>
-                    </div>
-                    <div class="content-wrapper">
-                        <div id="education-item" class="content-item">
-                            <div class="timeline">
-                                <div class="line"></div>
-                                <div class="point"></div>
-                            </div>
-                            <div class="timespan">
-                                <span data-value="education.start">2015</span><span>-</span><span data-value="education.end">2016</span>
-                            </div>
-                            <div class="text-wrapper">
-                                <p data-value="education.school" class="label">DP Design Development</p>
-                                <p data-value="education.degree" class="sublabel">Your first position</p>
-                                <p data-value="education.description" class="data">sajdf;lkjasl;kfjasld;kfjals;dkjfas;lkfj</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="skills-wrapper" class="marginb-15">
-                    <div class="header-wrapper">
-                        <span class="icon circle"><i class="fas fa-mouse"></i></span>
-                        <h4>Skills and expertize</h4>
-                    </div>
-                    <div class="timeline-wrapper">
-                        <div id="skills-item" class="content-item">
-                            <div class="text-wrapper">
-                                <p class="label" data-value="skills.name">DP Design Development</p>
-                                <div class="progress">
-                                    <div class="fill" data-fill="skills.percent"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
+        <!-- EDUCATION AND SKILLS ROW END -->
+    </div>
 </body>
 </html>

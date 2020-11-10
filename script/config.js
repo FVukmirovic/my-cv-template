@@ -8,7 +8,7 @@ window.dataForLabels = {
 };
 window.dataForCV = {
     firstName: 'Filip',
-    lastName: 'Vukmirovic',
+    lastName: 'Vukmirović',
     nameIcon: 'fas fa-user',
     jobTitle: 'Junior Front end developer',
     imageUrl: 'http://oykos.me/img/logo.png',
@@ -18,7 +18,7 @@ window.dataForCV = {
         street: 'Bajova 24'
     },
     fullAddressIcon: 'fas fa-map-marker',
-    phone: '067067999',
+    phone: '+38267067999',
     phoneIcon: 'fas fa-phone',
     email: 'filip-vukmirovic@oykos-hub.com',
     emailIcon: 'fas fa-envelope',
@@ -80,17 +80,16 @@ window.dataForCV = {
     education: [{
         start: '2012',
         end: '-',
-        school: 'Fakultet za informacione tehnologije, Univerzitet Mediteran',
-        degree: 'VII Stepen',
+        school: 'Fakultet za informacione tehnologije',
+        degree: 'Bachelor',
         description: 'smjer: Informacioni sistemi'
+    },{
+        start: '2020',
+        end: '2020',
+        school: 'Oykos Development Hub',
+        degree: 'Red Course',
+        description: 'HTML,CSS,JS,React,React Native'
     }],
-    // ,{
-    //     start: '2004',
-    //     end: '2010',
-    //     school: 'Prirodno matematicki Fakultet, odsjek za Racunarske nauke, Podgorica',
-    //     degree: 'VII Stepen',
-    //     description: 'Specijalista racunarskih nauka'
-    // }
     
     skills: [{
         name: 'HTML',
@@ -99,13 +98,13 @@ window.dataForCV = {
         name: 'CSS',
         percent: '60'
     },{
-        name: 'Javascript',
-        percent: '20'
+        name: 'JS',
+        percent: '30'
+    },{
+        name: 'React',
+        percent: '0'
     },{
         name: 'PS/LR',
-        percent: '60'
-    },{
-        name: 'MS Office',
-        percent: '90'
+        percent: '80'
     }]
 }

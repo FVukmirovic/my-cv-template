@@ -275,8 +275,8 @@ window.sectionProperties = {
         attributeValue: 'facebookURL',
 
     },{
-        checkProperty: 'facebookURLIcon',
-        attributeValue: 'facebookURLIcon',
+        checkProperty: 'linkedinURL',
+        attributeValue: 'linkedinURL',
 
     },{
         checkProperty: 'twitterURL',
@@ -317,10 +317,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const labelData = window.dataForLabels;
 
     if (parsedData && labelData) {
-        //renderElements(parsedData);
+        renderElements(parsedData);
 
         //document.getElementById("full-name").innerHTML = dataForCV.name;
-        //document.getElementById("job-name").innerHTML = dataForCV.jobTitle;
+        document.getElementById("job-name").innerHTML = dataForCV.jobTitle;
         
         insertValuesToElements(getDynamicValueElements(), 'data-value', parsedData);
         insertValuesToElements(getDynamiClassElements(), 'data-class', parsedData);
