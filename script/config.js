@@ -106,5 +106,16 @@ window.dataForCV = {
     },{
         name: 'PS/LR',
         percent: '80'
+    }],
+
+    languages: [{
+        language: 'Montenegrin',
+        level: 'Native'
+    },{
+        language: 'English',
+        level: 'Advanced'
+    },{
+        language: 'Italian',
+        level: 'Elementary'
     }]
 }

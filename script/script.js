@@ -235,6 +235,7 @@ function renderElements(data) {
             case 'work':
             case 'education':
             case 'skills':
+            case 'languages':
                 renderSectionCollectionElements(propertyName)
                 break;
             default:
@@ -250,7 +251,8 @@ window.elementIds = {
     references: 'references-item',
     work: 'work-item',
     education: 'education-item',
-    skills: 'skills-item'
+    skills: 'skills-item',
+    languages: 'languages-item'
 };
 
 window.sectionProperties = {
@@ -309,6 +311,10 @@ window.sectionProperties = {
     skills: [{
         checkProperty: 'skills',
         attributeValue: 'skills'
+    }],
+    languages: [{
+        checkProperty: 'languages',
+        attributeValue: 'languages'
     }]
 };
 
